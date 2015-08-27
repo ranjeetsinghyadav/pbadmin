@@ -1,0 +1,9 @@
+/target
+.classpath
+.project
+.settings
+compile
+target-eclipse
+grailsw
+grailsw.bat
+wrapper
