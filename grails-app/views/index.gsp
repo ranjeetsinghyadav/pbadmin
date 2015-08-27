@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
+		<title>Welcome to PBAdmin dashboard</title>
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
@@ -82,7 +82,7 @@
 	</head>
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
+		<%--<div id="status" role="complementary">
 			<h1>Application Status</h1>
 			<ul>
 				<li>App version: <g:meta name="app.version"/></li>
@@ -102,18 +102,23 @@
 				</g:each>
 			</ul>
 		</div>
+		--%>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
+			<h1>Welcome to PolicyBazaar Admin Dashboard</h1>
+			<p>Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				<h2>Available Controllers(Pages):</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+						<g:if test="${c.fullName.contains('InstantRenewalDetailController')}">
+							<li class="controller"><g:link controller="${c.logicalPropertyName}">Instant Renewal Details</g:link></li>
+						</g:if>
+						<%--<g:else>
+							<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+						</g:else>
+					--%>
 					</g:each>
 				</ul>
 			</div>
