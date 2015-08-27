@@ -76,6 +76,7 @@ grails.project.dependency.resolution = {
         //compile ":handlebars-asset-pipeline:1.3.0.3"
 		
 //		compile ":db-reverse-engineer:0.5.1"
+		compile ":rest-client-builder:2.1.1"
 		
     }
 }
