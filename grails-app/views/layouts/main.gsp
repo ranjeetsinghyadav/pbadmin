@@ -14,9 +14,15 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'apple-touch-icon-retina.png')}">
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
+		<script src="https://togetherjs.com/togetherjs-min.js"></script>
 		<g:layoutHead/>
 	</head>
 	<body>
+		<button id="start-togetherjs" type="button"
+		 onclick="TogetherJS(this); return false"
+		 data-end-togetherjs-html="End TogetherJS">
+		  Start Co-Browsing
+		</button>
 		<div id="grailsLogo" role="banner">
 			<a href="www.policybazaar.com">
 				<asset:image src="pb-logo.png" alt="Grails"/>
