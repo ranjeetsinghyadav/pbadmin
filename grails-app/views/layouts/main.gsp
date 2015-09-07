@@ -27,6 +27,13 @@
 			<a href="www.policybazaar.com">
 				<asset:image src="pb-logo.png" alt="Grails"/>
 			</a>
+			<sec:ifLoggedIn>
+				Logged in as <sec:loggedInUserInfo field="username"/>
+				<g:link controller="logout">Logout</g:link>
+			</sec:ifLoggedIn>
+			<sec:ifNotLoggedIn>
+				<g:link controller='login' action='auth'>Login</g:link>
+			</sec:ifNotLoggedIn>
 		</div>
 		<g:layoutBody/>
 		

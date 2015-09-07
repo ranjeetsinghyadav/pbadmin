@@ -120,3 +120,20 @@ log4j.main = {
 
 //grails.plugin.reveng.includeTables=['RenewalDocuments']
 //grails.plugin.reveng.defaultSchema='MTX'
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.pb.sec.SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.pb.sec.SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'org.pb.sec.SecRole'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                ['permitAll'],
+	'/index':           ['permitAll'],
+	'/index.gsp':       ['permitAll'],
+	'/assets/**':       ['permitAll'],
+	'/**/js/**':        ['permitAll'],
+	'/**/css/**':       ['permitAll'],
+	'/**/images/**':    ['permitAll'],
+	'/**/favicon.ico':  ['permitAll']
+]
+grails.plugin.springsecurity.logout.postOnly = false

@@ -79,6 +79,7 @@ grails.project.dependency.resolution = {
 		
 //		compile ":db-reverse-engineer:0.5.1"
 		compile ":rest-client-builder:2.1.1"
+		compile ":spring-security-core:2.0-RC5"
 		
     }
 }
