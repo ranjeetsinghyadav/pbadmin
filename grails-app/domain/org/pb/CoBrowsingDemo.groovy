@@ -1,11 +1,21 @@
 package org.pb
 
-class CoBrowsingDemo {
-	
-	String name
-	
-	
+import java.util.Date;
 
-    static constraints = {
-    }
+class CoBrowsingDemo {
+
+	String customerName
+
+	String mobile
+
+	String emailId
+
+	Integer customerId
+
+	Integer leadId
+
+	Date createdAt
+
+	static constraints = {
+	}
 }
