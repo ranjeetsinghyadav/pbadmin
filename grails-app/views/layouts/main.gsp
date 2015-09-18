@@ -32,9 +32,9 @@
 	var TogetherJSConfig_disableWebRTC = true;
 	//var TogetherJSConfig_youtube = true;
 
-	var TogetherJSConfig_getUserName = function() {
-		return 'Ranjeet Y';
-	};
+//	var TogetherJSConfig_getUserName = function() {
+//		return 'Ranjeet Y';
+//	};
 
 	//TogetherJS.on("ready", function () {
 	//	console.log("Co-browsing session is ready !!");
