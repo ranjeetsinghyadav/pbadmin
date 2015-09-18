@@ -29,11 +29,11 @@
 	//var TogetherJSConfig_autoStart = true;
 	var TogetherJSConfig_suppressJoinConfirmation = true;
 //	var TogetherJSConfig_suppressInvite = true;
-//	var TogetherJSConfig_disableWebRTC = true;
+	var TogetherJSConfig_disableWebRTC = true;
 	//var TogetherJSConfig_youtube = true;
 
 	var TogetherJSConfig_getUserName = function() {
-		return 'RSY';
+		return 'Ranjeet Y';
 	};
 
 	//TogetherJS.on("ready", function () {
