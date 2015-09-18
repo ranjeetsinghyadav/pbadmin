@@ -75,8 +75,40 @@
 <link rel="apple-touch-startup-image"
 	href="${request.contextPath}/admin/img/splash/iphone.png"
 	media="screen and (max-device-width: 320px)">
-<g:layoutHead />
+	<script>
+	//var TogetherJSConfig_hubBase = "http://10.0.8.23:7070";
+//	var TogetherJSConfig_hubBase = "http://vijay:1337";
+	var TogetherJSConfig_cloneClicks = true;
+	//var TogetherJSConfig_enableShortcut = true;
+//	var TogetherJSConfig_useMinimizedCode = true;
+	//var TogetherJSConfig_findRoom = {prefix: "PB Users", max: 5};
+	//var TogetherJSConfig_autoStart = true;
+	var TogetherJSConfig_suppressJoinConfirmation = true;
+//	var TogetherJSConfig_suppressInvite = true;
+	var TogetherJSConfig_disableWebRTC = true;
+	//var TogetherJSConfig_youtube = true;
+
+	//var TogetherJSConfig_getUserName = function() {
+		//return 'Ranjeet Y';
+	//};
+
+	//TogetherJS.on("ready", function () {
+	//	console.log("Co-browsing session is ready !!");
+	//	})
+	//	TogetherJS.on("close", function () {
+	//	console.log("Co-browsing session is closed !!");
+	//	})
+	//TogetherJS.reinitialize();
+
+	//Sometimes instead of having the user invite someone to TogetherJS you might want to handle the invitation internally in your app. 
+	//So typically when the person started TogetherJS, you'd want to find some other person they want to collaborate with and send the TogetherJS link to them. 
+	//To get at the TogetherJS link:
+	//TogetherJSConfig_on_ready = function () {
+	//  sendTogetherJSURLToServer(TogetherJS.shareUrl());
+	//};
+</script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
+<g:layoutHead />
 </head>
 
 <!--
@@ -471,16 +503,16 @@
 								Form Layouts</a></li>
 						<li><a href="${request.contextPath}/admin/validation.html">Smart
 								Form Validation</a></li>
-						<li><a
-							href="${request.contextPath}/admin/bootstrap-forms.html">Bootstrap
-								Form Elements</a></li>
+						
+						<li><g:link controller="home" action="formElements">Form Elements</g:link></li>
 						<li><a
 							href="${request.contextPath}/admin/bootstrap-validator.html">Bootstrap
 								Form Validation</a></li>
 						<li><a href="${request.contextPath}/admin/plugins.html">Form
 								Plugins</a></li>
-						<li class="active"><a
-							href="${request.contextPath}/admin/wizard.html">Wizards</a></li>
+						
+						<li class="active"><g:link controller="home" action="wizard">Wizards</g:link></li>
+							
 						<li><a href="${request.contextPath}/admin/other-editors.html">Bootstrap
 								Editors</a></li>
 						<li><a href="${request.contextPath}/admin/dropzone.html">Dropzone
@@ -763,9 +795,7 @@
 			</ol>
 			<!-- end breadcrumb -->
 
-			 You can also add more buttons to the
-				ribbon for further usability
-				Example below:
+			 
 				<span class="ribbon-button-alignment pull-right">
 				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
 				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
@@ -778,10 +808,14 @@
 
 			<!-- MAIN CONTENT -->
 			<div id="content">
-			<button id="start-togetherjs" type="button"
-		onclick="TogetherJS(this); return false"
-		data-end-togetherjs-html="End Co-Browsing">Start Co-Browsing
-	</button>
+				<div class="nav" role="navigation">
+					<a class="home" href="${createLink(uri: '/')}">Go to App Landing Page</a>
+				</div>
+				<button id="start-togetherjs" type="button"
+					onclick="TogetherJS(this); return false"
+					data-end-togetherjs-html="End Co-Browsing">Start Co-Browsing
+				</button>
+			
 				<g:layoutBody/>
 			</div>
 			<!-- END MAIN CONTENT -->
