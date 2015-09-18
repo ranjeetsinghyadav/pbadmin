@@ -624,13 +624,7 @@
 				<li><a href="#"><i class="fa fa-lg fa-fw fa-windows"></i> <span
 						class="menu-item-parent">Miscellaneous</span></a>
 					<ul>
-						<li>
-							<!--  <a href="http://bootstraphunter.com/smartadmin-landing/" target="_blank">Landing Page <i class="fa fa-external-link"></i></a>-->
-						</li>
-						<li><a href="${request.contextPath}/admin/pricing-table.html">Pricing
-								Tables</a></li>
-						<li><a href="${request.contextPath}/admin/invoice.html">Invoice</a>
-						</li>
+						
 						<li><a href="${request.contextPath}/admin/login.html"
 							target="_top">Login</a></li>
 						<li><a href="${request.contextPath}/admin/register.html"
@@ -651,16 +645,7 @@
 						<li><a href="${request.contextPath}/admin/ckeditor.html">CK
 								Editor</a></li>
 					</ul></li>
-				<li class="top-menu-invisible"><a href="#"><i
-						class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span
-						class="menu-item-parent">SmartAdmin Intel</span></a>
-					<ul>
-						<li><a href="${request.contextPath}/admin/difver.html"><i
-								class="fa fa-stack-overflow"></i> Different Versions</a></li>
-						<li><a href="${request.contextPath}/admin/applayout.html"><i
-								class="fa fa-cube"></i> App Settings</a></li>
-
-					</ul></li>
+				
 				<li class="chat-users top-menu-invisible"><a href="#"><i
 						class="fa fa-lg fa-fw fa-comment-o"><em
 							class="bg-color-pink flash animated">!</em></i> <span
