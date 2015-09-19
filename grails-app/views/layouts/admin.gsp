@@ -504,14 +504,14 @@
 						<li><a href="${request.contextPath}/admin/validation.html">Smart
 								Form Validation</a></li>
 						
-						<li><g:link controller="home" action="formElements">Form Elements</g:link></li>
+						<li><g:link controller="admin" action="formElements">Form Elements</g:link></li>
 						<li><a
 							href="${request.contextPath}/admin/bootstrap-validator.html">Bootstrap
 								Form Validation</a></li>
 						<li><a href="${request.contextPath}/admin/plugins.html">Form
 								Plugins</a></li>
 						
-						<li class="active"><g:link controller="home" action="wizard">Wizards</g:link></li>
+						<li class="active"><g:link controller="admin" action="wizard">Wizards</g:link></li>
 							
 						<li><a href="${request.contextPath}/admin/other-editors.html">Bootstrap
 								Editors</a></li>

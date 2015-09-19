@@ -113,7 +113,7 @@
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 						<g:if test="${c.fullName.contains('InstantRenewalDetailController')}">
-							<li class="controller"><g:link controller="${c.logicalPropertyName}">Co-Browsing Pages</g:link></li>
+							<li class="controller"><g:link controller="${c.logicalPropertyName}">CRUD Pages</g:link></li>
 						</g:if>
 						<g:if test="${c.fullName.contains('HomeController')}">
 							<li class="controller"><g:link controller="${c.logicalPropertyName}">Admin Page</g:link></li>

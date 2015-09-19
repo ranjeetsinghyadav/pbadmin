@@ -528,7 +528,7 @@
 																<span class="input-group-addon"><i
 																	class="fa fa-phone fa-lg fa-fw"></i></span> <input
 																	class="form-control input-lg"
-																	data-mask="+99 (999) 999-9999"
+																	data-mask="+91 (999) 999-9999"
 																	data-mask-placeholder="X" placeholder="+1" type="text"
 																	name="wphone" id="wphone">
 															</div>
@@ -540,7 +540,7 @@
 																<span class="input-group-addon"><i
 																	class="fa fa-mobile fa-lg fa-fw"></i></span> <input
 																	class="form-control input-lg"
-																	data-mask="+99 (999) 999-9999"
+																	data-mask="+91 (999) 999-9999"
 																	data-mask-placeholder="X" placeholder="+01" type="text"
 																	name="hphone" id="hphone">
 															</div>
