@@ -22,14 +22,14 @@
 <script>
 	//var TogetherJSConfig_hubBase = "http://10.0.8.23:7070";
 //	var TogetherJSConfig_hubBase = "http://vijay:1337";
-	var TogetherJSConfig_cloneClicks = true;
+//	var TogetherJSConfig_cloneClicks = true;
 	//var TogetherJSConfig_enableShortcut = true;
 //	var TogetherJSConfig_useMinimizedCode = true;
 	//var TogetherJSConfig_findRoom = {prefix: "PB Users", max: 5};
 	//var TogetherJSConfig_autoStart = true;
-	var TogetherJSConfig_suppressJoinConfirmation = true;
+	//var TogetherJSConfig_suppressJoinConfirmation = true;
 //	var TogetherJSConfig_suppressInvite = true;
-	var TogetherJSConfig_disableWebRTC = true;
+	//var TogetherJSConfig_disableWebRTC = true;
 	//var TogetherJSConfig_youtube = true;
 
 //	var TogetherJSConfig_getUserName = function() {
@@ -51,16 +51,16 @@
 	//  sendTogetherJSURLToServer(TogetherJS.shareUrl());
 	//};
 </script>
-<script src="https://togetherjs.com/togetherjs-min.js"></script>
+<%--<script src="https://togetherjs.com/togetherjs-min.js"></script>
 
-<g:layoutHead />
+--%><g:layoutHead />
 </head>
 <body>
-	<button id="start-togetherjs" type="button"
+	<%--<button id="start-togetherjs" type="button"
 		onclick="TogetherJS(this); return false"
 		data-end-togetherjs-html="End Co-Browsing">Start Co-Browsing
 	</button>
-	<div id="grailsLogo" role="banner">
+	--%><div id="grailsLogo" role="banner">
 		<a href="www.policybazaar.com"> <asset:image src="pb-logo.png"
 				alt="Grails" />
 		</a>

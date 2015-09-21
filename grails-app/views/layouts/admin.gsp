@@ -776,31 +776,35 @@
 
 			<!-- breadcrumb -->
 			<ol class="breadcrumb">
-				<li>Home</li>
+				<li><a class="home" href="${createLink(uri: '/')}">Go to Home Page</a></li>
 			</ol>
 			<!-- end breadcrumb -->
 
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
 			 
 				<span class="ribbon-button-alignment pull-right">
 				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
 				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
 				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
 				</span> 
-				
+				-->
+				<span class="ribbon-button-alignment pull-middle">
+					<span id="search" class="btn btn-primary" data-title="Co-Browse">
+						<button id="start-togetherjs" type="button"
+							onclick="TogetherJS(this); return false"
+							data-end-togetherjs-html="End Co-Browsing">Co-Browse
+						</button>
+					</span>
+				</span>
 
 			</div>
 			<!-- END RIBBON -->
 
 			<!-- MAIN CONTENT -->
 			<div id="content">
-				<div class="nav" role="navigation">
-					<a class="home" href="${createLink(uri: '/')}">Go to App Landing Page</a>
-				</div>
-				<button id="start-togetherjs" type="button"
-					onclick="TogetherJS(this); return false"
-					data-end-togetherjs-html="End Co-Browsing">Start Co-Browsing
-				</button>
-			
 				<g:layoutBody/>
 			</div>
 			<!-- END MAIN CONTENT -->
